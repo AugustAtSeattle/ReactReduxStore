@@ -7,6 +7,8 @@ const counterReducer = (state = 0, action) => {
       return newState = state + action.payload;
     case actionType.REMOVE_COUNTER:
       return newState = state - action.payload;
+    case actionType.RESET_COUNTER:
+      return newState = 0;
     default:
       return state
   }
