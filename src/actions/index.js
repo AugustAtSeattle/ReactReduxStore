@@ -14,3 +14,8 @@ export const resetCounter = () => ({
   type: actionType.RESET_COUNTER,
   payload: 1
 });
+
+export const fetchNews = () => ({
+  type: actionType.fetchNews,
+  payload: "Good News, Seattle"
+});

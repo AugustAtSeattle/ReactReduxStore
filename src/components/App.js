@@ -3,12 +3,15 @@ import Counter from '../containers/Counter';
 import AddCounter from '../containers/AddCounter';
 import RemoveCounter from '../containers/RemoveCounter';
 import ResetCounter from  '../containers/ResetCounter'
+import News from '../containers/News'
 
 const App = () => {
   return (
     <div className="container">
-        <div> Hello Ubuntu </div>
-      <Counter></Counter><br />
+        <div> Hello React & Redux </div>
+      <Counter></Counter>
+      <br />
+      
       <div className="columns">
         <div className="column is-11">
           <AddCounter></AddCounter>
@@ -17,12 +20,17 @@ const App = () => {
         <div className="column auto">
           <RemoveCounter></RemoveCounter>
         </div>
-      </div> <br />
+      </div> 
+      <br />
+      
       <div className="columns">
         <div className="column is-11">
           <ResetCounter></ResetCounter>
         </div>
-      </div>  
+      </div>
+      <br />
+      
+      <News></News>
       </div>
   )
 }
