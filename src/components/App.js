@@ -4,6 +4,7 @@ import AddCounter from '../containers/AddCounter';
 import RemoveCounter from '../containers/RemoveCounter';
 import ResetCounter from  '../containers/ResetCounter'
 import News from '../containers/News'
+import FetchNews from '../containers/FetchNews'
 
 const App = () => {
   return (
@@ -31,6 +32,14 @@ const App = () => {
       <br />
       
       <News></News>
+      <br />
+
+      <div className="columns">
+        <div className="column is-11">
+          <FetchNews></FetchNews>
+        </div>
+      </div>
+      <br />
       </div>
   )
 }

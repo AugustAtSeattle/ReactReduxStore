@@ -19,7 +19,7 @@ class News extends Component {
 }
 function mapStateToProps(state){
   return {
-    news: state.newsReducer,
+    news: state.newsReducer.data,
   };
 }
 export default connect(mapStateToProps)(News);
